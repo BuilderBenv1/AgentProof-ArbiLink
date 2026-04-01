@@ -1,0 +1,16 @@
+{
+  "name": "agentproof-arbilink",
+  "version": "1.0.0",
+  "description": "AgentProof ArbiLink — Arbitrum trust oracle skill for AI agents",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.4",
+    "express": "^4.21.1"
+  },
+  "license": "MIT"
+}

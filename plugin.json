@@ -1,0 +1,36 @@
+{
+  "name": "agentproof-arbilink",
+  "version": "1.0.0",
+  "description": "Query AgentProof trust scores for agents registered on Arbitrum One via the ERC-8004 identity registry.",
+  "author": "AgentProof",
+  "license": "MIT",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/trust-score/:agentAddress",
+      "description": "Get trust score and Arbitrum registry status for an agent"
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "description": "Register an agent on the Arbitrum One ERC-8004 registry"
+    },
+    {
+      "method": "GET",
+      "path": "/leaderboard",
+      "description": "Top 10 trusted agents on Arbitrum indexed by AgentProof"
+    },
+    {
+      "method": "GET",
+      "path": "/health",
+      "description": "Skill status and oracle connectivity check"
+    }
+  ],
+  "env": [
+    { "name": "ARBITRUM_RPC_URL", "required": false, "default": "https://arb1.arbitrum.io/rpc" },
+    { "name": "PRIVATE_KEY", "required": true, "description": "Wallet key for signing registry transactions" },
+    { "name": "AGENTPROOF_BASE_URL", "required": false, "default": "https://oracle.agentproof.sh" }
+  ],
+  "install": "npm install",
+  "start": "npm start"
+}
