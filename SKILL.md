@@ -23,7 +23,7 @@ A skill that lets any AI agent query the AgentProof trust oracle for agents regi
 ### Check Trust Score
 
 ```bash
-curl -s https://YOUR_DEPLOYMENT/trust-score/0xAGENT_ADDRESS | jq .
+curl -s https://agentproof-arbilink-production.up.railway.app/trust-score/0xAGENT_ADDRESS | jq .
 ```
 
 **Example response:**
@@ -59,7 +59,7 @@ curl -s https://YOUR_DEPLOYMENT/trust-score/0xAGENT_ADDRESS | jq .
 ### Register on Arbitrum
 
 ```bash
-curl -X POST https://YOUR_DEPLOYMENT/register \
+curl -X POST https://agentproof-arbilink-production.up.railway.app/register \
   -H "Content-Type: application/json" \
   -d '{"metadata": "AgentProof ArbiLink"}' | jq .
 ```
@@ -81,7 +81,7 @@ curl -X POST https://YOUR_DEPLOYMENT/register \
 ### Get Leaderboard
 
 ```bash
-curl -s https://YOUR_DEPLOYMENT/leaderboard | jq .
+curl -s https://agentproof-arbilink-production.up.railway.app/leaderboard | jq .
 ```
 
 Returns the top 10 trusted agents currently indexed on Arbitrum.
@@ -89,7 +89,7 @@ Returns the top 10 trusted agents currently indexed on Arbitrum.
 ### Health Check
 
 ```bash
-curl -s https://YOUR_DEPLOYMENT/health | jq .
+curl -s https://agentproof-arbilink-production.up.railway.app/health | jq .
 ```
 
 **Example response:**
@@ -133,7 +133,7 @@ Agent → ArbiLink Skill → AgentProof Oracle (oracle.agentproof.sh)
 
 ## Links
 
-- Live deployment: <!-- INSERT RAILWAY URL -->
+- Live deployment: https://agentproof-arbilink-production.up.railway.app
 - Arbitrum registry tx: <!-- INSERT TX HASH -->
 - AgentProof dashboard: https://agentproof.sh
 - AgentProof oracle: https://oracle.agentproof.sh

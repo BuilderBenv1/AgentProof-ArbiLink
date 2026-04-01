@@ -30,31 +30,31 @@ npm start
 
 ### Check trust score
 ```bash
-curl https://YOUR_DEPLOYMENT/trust-score/0xAGENT_ADDRESS
+curl https://agentproof-arbilink-production.up.railway.app/trust-score/0xAGENT_ADDRESS
 ```
 
 ### Register on Arbitrum
 ```bash
-curl -X POST https://YOUR_DEPLOYMENT/register \
+curl -X POST https://agentproof-arbilink-production.up.railway.app/register \
   -H "Content-Type: application/json" \
   -d '{"metadata": "AgentProof ArbiLink"}'
 ```
 
 ### Leaderboard
 ```bash
-curl https://YOUR_DEPLOYMENT/leaderboard
+curl https://agentproof-arbilink-production.up.railway.app/leaderboard
 ```
 
 ### Health
 ```bash
-curl https://YOUR_DEPLOYMENT/health
+curl https://agentproof-arbilink-production.up.railway.app/health
 ```
 
 ## Arbitrum Registration
 
 - **Registry contract:** `0x8004A169FB4a3325136EB29fA0ceB6D2e539a432`
 - **Chain:** Arbitrum One
-- **Registration tx:** <!-- INSERT TX HASH -->
+- **Registration tx:** <!-- INSERT TX HASH AFTER CALLING POST /register -->
 
 ## Deploy to Railway
 
