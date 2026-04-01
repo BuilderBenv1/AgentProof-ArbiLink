@@ -54,7 +54,7 @@ curl https://agentproof-arbilink-production.up.railway.app/health
 
 - **Registry contract:** `0x8004A169FB4a3325136EB29fA0ceB6D2e539a432`
 - **Chain:** Arbitrum One
-- **Registration tx:** <!-- INSERT TX HASH AFTER CALLING POST /register -->
+- **Registration tx:** [`0x1463c26e...636cf`](https://arbiscan.io/tx/0x1463c26e8e345b222132649f5220905ec9b589745fcb9e33993b9e8ebfa636cf)
 
 ## Deploy to Railway
 

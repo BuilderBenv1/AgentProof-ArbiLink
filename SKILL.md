@@ -134,7 +134,7 @@ Agent → ArbiLink Skill → AgentProof Oracle (oracle.agentproof.sh)
 ## Links
 
 - Live deployment: https://agentproof-arbilink-production.up.railway.app
-- Arbitrum registry tx: <!-- INSERT TX HASH -->
+- Arbitrum registry tx: https://arbiscan.io/tx/0x1463c26e8e345b222132649f5220905ec9b589745fcb9e33993b9e8ebfa636cf
 - AgentProof dashboard: https://agentproof.sh
 - AgentProof oracle: https://oracle.agentproof.sh
 - ERC-8004 spec: https://eips.ethereum.org/EIPS/eip-8004
