@@ -7,6 +7,30 @@ const { registerAgent, isRegistered, REGISTRY_ADDRESS } = require("./registry");
 const app = express();
 app.use(express.json());
 
+// --- GET / (landing page) ---
+app.get("/", (req, res) => {
+  res.json({
+    name: "AgentProof ArbiLink",
+    description:
+      "Trust scoring skill for AI agents on Arbitrum One. " +
+      "Queries the AgentProof oracle and validates agents against the ERC-8004 identity registry.",
+    version: "1.0.0",
+    chain: "arbitrum-one",
+    registry: REGISTRY_ADDRESS,
+    endpoints: {
+      "GET /trust-score/:address": "Look up trust score for any agent address",
+      "POST /register": "Register an agent on the Arbitrum ERC-8004 registry",
+      "GET /leaderboard": "Top agents on Arbitrum by trust score",
+      "GET /health": "Health check + oracle status",
+    },
+    links: {
+      github: "https://github.com/BuilderBenv1/AgentProof-ArbiLink",
+      oracle: "https://oracle.agentproof.sh",
+      site: "https://agentproof.sh",
+    },
+  });
+});
+
 // --- GET /trust-score/:agentAddress ---
 app.get("/trust-score/:agentAddress", async (req, res) => {
   const { agentAddress } = req.params;
